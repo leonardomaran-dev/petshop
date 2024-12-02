@@ -163,6 +163,8 @@ section p {
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
     padding: var(--size-md);
+    max-width: 445px;
+    text-align: justify;
 }
 
 .hidden {
