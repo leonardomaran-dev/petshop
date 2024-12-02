@@ -1,0 +1,245 @@
+/* CSS RESET */
+
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  VARIABLES */
+
+:root {
+    --main-color: #FF725E;
+    --second-color: #FF9A6C;
+    --size-sm: 16px;
+    --size-md: 24px;
+    --size-lg: 32px;
+    --size-xg: 80px;
+    --size-xxg: 64px;
+    --size-xxxg: 128px;
+}
+
+/* BODY */
+
+body {
+    color: #263138;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--second-color);
+    padding: var(--size-md) var(--size-xg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-itens {
+    display: flex;
+    gap: var(--size-lg);
+}
+
+header nav a {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+header nav a:hover {
+    color: #ffffffa2;
+    border-bottom: 1px solid #ffffffa2;
+}
+
+/* MAIN */
+
+#beginning {
+    display: flex;
+    align-items: center;
+    gap: var(--size-lg);
+    padding: var(--size-md) var(--size-xg) var(--size-xg);
+    position: relative;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    font-size: var(--size-lg);
+    margin-bottom: var(--size-lg);
+
+}
+
+section p {
+    line-height: 150%;
+    margin-bottom: var(--size-lg);
+}
+
+.btn {
+    background-color: var(--main-color);
+    padding: var(--size-sm) var(--size-lg);
+    border-radius: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color: #ff715ed3;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: var(--main-color);
+    padding: var(--size-sm) var(--size-lg);
+    text-underline-offset: 4px;
+}
+
+#shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#clinic,
+#doubts {
+    display: flex;
+    gap: var(--size-xxg);
+    align-items: center;
+    padding: var(--size-xxg) var(--size-xg);
+}
+
+#clinic li {
+    margin-bottom: var(--size-sm);
+    margin-left: var(--size-lg);
+}
+
+#pharmacy {
+    padding: var(--size-xxg) var(--size-xg);
+    text-align: center;
+}
+
+#pharmacy img {
+    margin: var(--size-xxg) auto;
+}
+
+#pharmacy p {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.doubt {
+    position: relative;
+}
+
+.doubt h3 {
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: var(--size-md);
+}
+
+.doubt img {
+    position: absolute;
+    top: var(--size-lg);
+    right: var(--size-md);
+}
+
+#doubts-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+}
+
+.doubt p {
+    border-bottom: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: var(--size-md);
+}
+
+.hidden {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    gap: var(--size-xg);
+    padding: var(--size-xxg) var(--size-xg);
+    justify-content: space-around;
+}
+
+footer strong,
+footer img {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--size-md);
+}
+
+footer nav a {
+    color: #263138;
+    display: block;
+    margin-bottom: var(--size-sm);
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: var(--size-sm);
+    max-width: 350px;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    vertical-align: middle;
+    gap: 4px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #263138;
+    margin-top: 2px;
+}
+
+.contact p {
+    text-decoration: none;
+    color: #263138;
+    margin-top: 4px;
+}
+
+/* AUTHOR */
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    background-color: #263138;
+    text-align: center;
+    padding: var(--size-md);
+    color: #FFFFFF;
+    gap: 12px;
+}
+
+#copyright a {
+    color: var(--second-color);
+    text-decoration: none;
+}

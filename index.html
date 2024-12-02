@@ -12,7 +12,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- FONTS GOOGLE -->
 
@@ -28,7 +28,7 @@
     <header>
         <a href="/"><img src="./img/logo-white.svg" alt="Logo Petlife"></a>
 
-        <nav>
+        <nav id="nav-itens">
             <a href="#beginning">Ínicio</a>
             <a href="#clinic">Clínica</a>
             <a href="#pharmacy">Farmácia</a>
@@ -79,7 +79,7 @@
         </section>
         <section id="doubts">
             <img src="./img/faq-img.svg" loading="lazy">
-            <div>
+            <div id="doubts-content">
                 <h2>Ficou com alguma dúvida?</h2>
                 <div class="doubt">
                     <h3>Serviços oferecidos</h3>
@@ -99,7 +99,10 @@
                 <div class="doubt">
                     <h3>A clínica oferece banho e tosa?</h3>
                     <img src="img/arrow-down.svg">
-                    <p class="hidden"></p>
+                    <p class="hidden">
+                        Sim, a nossa clínica oferece serviços completos de banho e tosa. Garantimos que seu pet receba
+                        cuidados de higiene e estética em um ambiente seguro e confortável.
+                    </p>
                 </div>
             </div>
         </section>
@@ -112,29 +115,39 @@
         <div>
             <strong>Links rápidos</strong>
             <nav class="footer-nav">
-                <a href="#incio">Ínicio</a>
-                <a href="#clinica">Clínica</a>
-                <a href="#farmacia">Farmácia</a>
-                <a href="#duvidas">Dúvidas</a>
+                <a href="#beginning">Ínicio</a>
+                <a href="#clinic">Clínica</a>
+                <a href="#pharmacy">Farmácia</a>
+                <a href="#doubts">Dúvidas</a>
             </nav>
         </div>
-        <div id="footer-infos">
+        <div>
             <strong>Encontre-nos</strong>
-            <div>
-                <img src="img/whatsapp.svg" alt="Ícone Whatsapp">
-                <p>Whatsapp: <a href="https://wa.me/5511123456789">(11) 12355-6789</a></p>
+            <div class="contact">
+                <img width="24px" src="img/whatsapp.svg" alt="Ícone Whatsapp">
+                <a href="https://wa.me/5511123456789">(11) 12345-6789</a>
             </div>
-            <p>E-mail: <a href="mailto:contato@petlife.com">contato@petlife.com</a></p>
-            <p>Endereço: Rua João da Silva, N°123, Centro , São Paulo-SP</p>
+            <div class="contact">
+                <img width="24px" src="./img/mail.svg" alt="ícone e-mail">
+                <a href="mailto:contato@petlife.com">contato@petlife.com</a>
+            </div>
+            <div class="contact">
+                <img width="24px" src="./img/home.svg" alt="Ícone Casa">
+                <p>Rua João da Silva, N°123, Centro</p>
+            </div>
         </div>
     </footer>
     <div id="copyright">
         <p>Desenvolvido por Leonardo Maran</p>
-    </div>
-    <div id="icons">
-        <a href="https://github.com/leonardomaran-dev" target="_blank"><img src="img/github.svg" alt="Ícone Github"></a>
-        <a href="https://br.linkedin.com/in/leonardo-maran-02275a2b1?trk=people-guest_people_search-card"
-            target="_blank"><img src="img/linkedin.svg" alt="Ícone Linkedin"></a>
+        <div>
+            <a href="https://github.com/leonardomaran-dev" target="_blank">
+                <img width="30" src="img/github.svg" alt="Ícone Github">
+            </a>
+            <a href="https://br.linkedin.com/in/leonardo-maran-02275a2b1?trk=people-guest_people_search-card"
+                target="_blank">
+                <img width="32px" src="img/linkedin.svg" alt="Ícone Linkedin">
+            </a>
+        </div>
     </div>
 
 </body>
