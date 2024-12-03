@@ -13,8 +13,59 @@
         display: none;
     }
 
+    /* MENU COLLAPSE */
+
+    #menu {
+        position: absolute;
+        background-color: #ff9b6cc7;
+        top: 50px;
+        right: 20px;
+        z-index: 1;
+        text-align: center;
+        border: 2px solid #000000b0;
+        border-radius: 8px;
+    }
+
+    #menu a {
+        border: 0;
+    }
+
+    #menu a:hover {
+
+        cursor: default;
+    }
+
     #menu-collapse {
         display: block;
+        cursor: pointer;
+    }
+
+    #menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-container nav {
+        padding: 10px;
+
+    }
+
+    #menu-container nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu-container nav li {
+        padding: 8px 0;
+
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        background-color: #000000;
     }
 
     /* MAIN */

@@ -1,6 +1,4 @@
-const doubt = document.querySelectorAll('.doubt');
-
-doubt.forEach(div => {
+document.querySelectorAll('.doubt').forEach(div => {
     div.addEventListener('click', () => {
 
         const p = div.querySelector('p');
@@ -10,3 +8,27 @@ doubt.forEach(div => {
         }
     });
 });
+
+// MENU COLLAPSE
+
+const menu = document.getElementById("menu");
+
+document.getElementById("menu-icon").addEventListener("click", function () {
+
+    if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+        menu.classList.add("visible");
+    } else {
+        menu.classList.remove("visible");
+        menu.classList.add("hidden");
+    }
+});
+
+// TO HIDE MENU AFTER CLICK ON 'li'
+
+document.querySelectorAll('.li').forEach(tag => {
+    tag.addEventListener('click', () => {
+        menu.classList.remove("visible");
+        menu.classList.add("hidden");
+    })
+})

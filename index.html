@@ -13,7 +13,7 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive-layout-mobile.css">
+    <link rel="stylesheet" href="./css/responsive-layout-smartphone.css">
 
     <!-- FONTS GOOGLE -->
 
@@ -35,9 +35,23 @@
             <a href="#pharmacy">Farmácia</a>
             <a href="#doubts">Dúvidas</a>
         </nav>
-        <div id="menu-collapse" class="hidden">
-            <img width="28px" src="./img/menu-hamburguer.svg">
+        <div id="menu-container">
+            <div id="menu-collapse" class="hidden">
+                <img width="28px" src="./img/menu-hamburguer.svg" alt="Menu" id="menu-icon">
+            </div>
+            <nav id="menu" class="hidden">
+                <ul>
+                    <li class="li"><a href="#start">Ínicio</a></li>
+                    <hr>
+                    <li class="li"><a href="#clinic">Clínica</a></li>
+                    <hr>
+                    <li class="li"><a href="#pharmacy">Farmácia</a></li>
+                    <hr>
+                    <li class="li"><a href="#doubts">Dúvidas</a></li>
+                </ul>
+            </nav>
         </div>
+
     </header>
     <main>
         <section id="start">
