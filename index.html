@@ -13,6 +13,7 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-layout-mobile.css">
 
     <!-- FONTS GOOGLE -->
 
@@ -29,14 +30,17 @@
         <a href="/"><img src="./img/logo-white.svg" alt="Logo Petlife"></a>
 
         <nav id="nav-itens">
-            <a href="#beginning">Ínicio</a>
+            <a href="#start">Ínicio</a>
             <a href="#clinic">Clínica</a>
             <a href="#pharmacy">Farmácia</a>
             <a href="#doubts">Dúvidas</a>
         </nav>
+        <div id="menu-collapse" class="hidden">
+            <img width="28px" src="./img/menu-hamburguer.svg">
+        </div>
     </header>
     <main>
-        <section id="beginning">
+        <section id="start">
             <img src="./img/start-img.svg">
             <div>
                 <h1>Garanta uma vida longa e cheia de alegria para o seu melhor amigo</h1>
@@ -44,8 +48,10 @@
                     estimação tenha uma vida saudável e feliz. Com produtos e serviços pensados para atender às
                     necessidades de cada pet, você pode proporcionar momentos de alegria, saúde e bem-estar para o seu
                     melhor amigo.</p>
-                <a class="btn" href="https://wa.me/5511123456789" target="_blank">Agende a sua consulta</a>
-                <a class="btn-transparent" href="#clinic">Conheça a nossa clínica</a>
+                <div class="btns">
+                    <a class="btn" href="https://wa.me/5511123456789" target="_blank">Agende a sua consulta</a>
+                    <a class="btn-transparent" href="#clinic">Conheça a nossa clínica</a>
+                </div>
             </div>
             <img id="shape" src="img/shape.svg">
         </section>
@@ -65,10 +71,10 @@
                     <li>Tratamentos</li>
                     <li>Odontologia veterinária</li>
                     <li>Atendimento de emergência</li>
-                    <li>Nutrição</li>
+                    <li class="center">Nutrição</li>
                 </ul>
             </div>
-            <img src="./img/clinic-img.svg" loading="lazy">
+            <img class="img-clinic" src="./img/clinic-img.svg" loading="lazy">
         </section>
         <section id="pharmacy">
             <h2>Venha conferir o nosso petshop e farmácia</h2>
@@ -115,7 +121,7 @@
         <div>
             <strong>Links rápidos</strong>
             <nav class="footer-nav">
-                <a href="#beginning">Ínicio</a>
+                <a href="#start">Ínicio</a>
                 <a href="#clinic">Clínica</a>
                 <a href="#pharmacy">Farmácia</a>
                 <a href="#doubts">Dúvidas</a>
