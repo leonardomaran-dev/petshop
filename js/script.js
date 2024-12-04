@@ -1,7 +1,5 @@
 const tela = document.getElementById("tela")
-tela.innerText = window.innerWidth;
-
-// console.log(window.innerWidth) 
+tela.innerText = window.innerWidth; 
 
 // VIEWPORT VERIFICATION 
 
