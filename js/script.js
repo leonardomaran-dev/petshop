@@ -1,3 +1,8 @@
+const tela = document.getElementById("tela")
+tela.innerText = window.innerWidth;
+
+// console.log(window.innerWidth) 
+
 // VIEWPORT VERIFICATION 
 
 if (window.innerWidth > 576) {
@@ -31,3 +36,7 @@ document.querySelectorAll('.li').forEach(tag => {
         menu.classList.add("hidden");
     })
 })
+
+
+
+
