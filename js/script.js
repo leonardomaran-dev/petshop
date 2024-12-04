@@ -1,6 +1,3 @@
-const tela = document.getElementById("tela")
-tela.innerText = window.innerWidth; 
-
 // VIEWPORT VERIFICATION 
 
 if (window.innerWidth > 576) {
