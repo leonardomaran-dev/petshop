@@ -37,7 +37,7 @@ header {
     align-items: center;
 }
 
-#nav-itens {
+#visible {
     display: flex;
     gap: var(--size-lg);
 }
@@ -50,7 +50,7 @@ header nav a {
     transition: .3s ease;
 }
 
-#nav-itens a:hover {
+#visible a:hover {
     color: #ffffffa2;
     border-bottom: 1px solid #ffffffa2;
 }

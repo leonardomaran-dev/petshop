@@ -1,11 +1,16 @@
+// VIEWPORT VERIFICATION 
+
+if (window.innerWidth > 576) {
+    document.getElementById("menu-container").remove();
+    document.getElementById("nav-itens").id = 'visible';
+};
+
+// DROPDOWN
+
 document.querySelectorAll('.doubt').forEach(div => {
     div.addEventListener('click', () => {
 
-        const p = div.querySelector('p');
-
-        if (p) {
-            p.classList.toggle('hidden');
-        }
+        const p = div.querySelector('p').classList.toggle('hidden');
     });
 });
 
@@ -15,16 +20,10 @@ const menu = document.getElementById("menu");
 
 document.getElementById("menu-icon").addEventListener("click", function () {
 
-    if (menu.classList.contains("hidden")) {
-        menu.classList.remove("hidden");
-        menu.classList.add("visible");
-    } else {
-        menu.classList.remove("visible");
-        menu.classList.add("hidden");
-    }
+    menu.classList.toggle("hidden");
 });
 
-// TO HIDE MENU AFTER CLICK ON 'li'
+// TO HIDE MENU AFTER CLICK ON THIS
 
 document.querySelectorAll('.li').forEach(tag => {
     tag.addEventListener('click', () => {
