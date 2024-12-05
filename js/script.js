@@ -5,33 +5,22 @@ if (window.innerWidth > 576) {
     document.getElementById("nav-itens").id = 'visible';
 };
 
-// DROPDOWN
-
-document.querySelectorAll('.doubt').forEach(div => {
-    div.addEventListener('click', () => {
-
-        const p = div.querySelector('p').classList.toggle('hidden');
-    });
-});
-
-// MENU COLLAPSE
+//  MENU DROPDOWN
 
 const menu = document.getElementById("menu");
+const menuIcon = document.getElementById("menu-icon");
 
-document.getElementById("menu-icon").addEventListener("click", function () {
-
-    menu.classList.toggle("hidden");
-});
+if (menuIcon) menuIcon.addEventListener("click", () => menu.classList.toggle("hidden"));
 
 // TO HIDE MENU AFTER CLICK ON THIS
 
 document.querySelectorAll('.li').forEach(tag => {
-    tag.addEventListener('click', () => {
-        menu.classList.remove("visible");
-        menu.classList.add("hidden");
-    })
+    tag.addEventListener('click', () => menu.classList.toggle("hidden"))
 })
 
+//  COLLAPSE
 
-
-
+document.querySelectorAll('.doubt').forEach(div => {
+    console.log(div);
+    div.addEventListener('click', () => div.querySelector('p').classList.toggle('hidden'));
+});
